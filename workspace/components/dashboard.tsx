@@ -27,7 +27,6 @@ import {
   useDisclosure
 } from '@chakra-ui/react'
 
-import { Line } from 'react-chartjs-2'
 import RoutineDetails from './routine-datails';
 import Indicator from './indicator';
 import Histogram from './histogram';
@@ -49,6 +48,7 @@ export default function Dashboard({ watcher, isLoading }: any) {
         <Grid templateColumns='repeat(4, 1fr)' gap={4}>
           {/* <GridItem colSpan={4} bg='#1f1e1e' p={7}>
             <Text>Voltar</Text>
+            <Input placeholder='Select Date and Time' size='md' type='datetime-local' />
           </GridItem> */}
 
           {/* <GridItem rowSpan={10} colSpan={1} bg={'#1f1e1e'} p={7} maxH={'950px'}>
