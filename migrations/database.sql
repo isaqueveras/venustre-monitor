@@ -75,3 +75,8 @@ END;
 $function$;
 
 CREATE TRIGGER t_routine_set_date_update BEFORE UPDATE ON t_routine FOR EACH ROW EXECUTE PROCEDURE set_date_update();
+
+-- INDEX
+CREATE INDEX t_histogram_key_idx ON public.t_histogram ("key");
+CREATE INDEX t_histogram_id_idx ON public.t_histogram (id,created_at);
+CREATE INDEX t_histogram_created_at_idx ON public.t_histogram (created_at);
