@@ -72,8 +72,8 @@ const Histogram = () => {
 
   return (
     <Box>
-      <Text>Histogramas</Text>
-      <Text textColor={'gray'}>Histogramas implementado nas rotinas</Text>
+      <Text>Histograms</Text>
+      <Text textColor={'gray'}>Histograms implemented in routine</Text>
       <Box mt={5}>
         <Line options={options} data={{ labels: data?.labels, datasets: datasets }} height={70} />
       </Box>

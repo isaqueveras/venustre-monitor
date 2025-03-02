@@ -112,23 +112,7 @@ export default function Dashboard({ watcher, isLoading }: any) {
           </GridItem>
 
           <GridItem colSpan={4}>
-            <Grid templateColumns='repeat(5, 1fr)' gap={4}>
-              <GridItem colSpan={1} bg='#1f1e1e' p={7}>
-                <Indicator name={'Total requests'} desc={'Overall sum of count'} value={123} />
-              </GridItem>
-              <GridItem colSpan={1} bg='#1f1e1e' p={7}>
-                <Indicator name={'Error requests'} desc={'Overall sum of count'} value={12} />
-              </GridItem>
-              <GridItem colSpan={1} bg='#1f1e1e' p={7}>
-                <Indicator name={'Average latency'} desc={'General average of count'} value={"0.23s"} />
-              </GridItem>
-              <GridItem colSpan={1} bg='#1f1e1e' p={7}>
-                <Indicator name={'Error percentage'} desc={'Overall error percentage'} value={"0.2%"} />
-              </GridItem>
-              <GridItem colSpan={1} bg='#1f1e1e' p={7}>
-                <Indicator name={'Error percentage'} desc={'Overall error percentage'} value={"0.2%"} />
-              </GridItem>
-            </Grid>
+            <Indicator />
           </GridItem>
 
           <GridItem colSpan={4} bg='#1f1e1e' p={7}>

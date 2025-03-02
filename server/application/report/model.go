@@ -10,3 +10,13 @@ type Dataset struct {
 	Data  []float64 `json:"data"`
 	Color string    `json:"color"`
 }
+
+type Indicators struct {
+	Data []Indicator `json:"data"`
+}
+
+type Indicator struct {
+	Name  string      `json:"name"`
+	Desc  string      `json:"desc"`
+	Value interface{} `json:"value"`
+}

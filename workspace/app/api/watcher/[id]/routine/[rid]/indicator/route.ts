@@ -5,6 +5,6 @@ export async function GET(request: NextRequest, { params }: {
     rid: string
   }
 }) {
-  const res = await fetch("http://localhost:8181/v1/report/routine/" + params.rid + "/histograms")
+  const res = await fetch("http://localhost:8181/v1/report/routine/" + params.rid + "/indicators")
   return NextResponse.json(await res.json());
 }
